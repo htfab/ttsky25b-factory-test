@@ -14,6 +14,6 @@ jobs:
           submodules: recursive
 
       - name: Build docs
-        uses: TinyTapeout/tt-gds-action/docs@ttsky25b
+        uses: htfab/tt-gds-action/docs@datasheet
         with:
           tools-ref: refs/pull/123/merge
