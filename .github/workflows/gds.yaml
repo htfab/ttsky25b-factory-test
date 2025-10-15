@@ -17,7 +17,6 @@ jobs:
         uses: TinyTapeout/tt-gds-action@ttsky25b
         with:
           pdk: sky130
-          tools-ref: refs/pull/123/merge
 
   precheck:
     needs: gds
@@ -27,7 +26,6 @@ jobs:
         uses: TinyTapeout/tt-gds-action/precheck@ttsky25b
         with:
           pdk: sky130
-          tools-ref: refs/pull/123/merge
 
   gl_test:
     needs: gds
@@ -42,7 +40,6 @@ jobs:
         uses: TinyTapeout/tt-gds-action/gl_test@ttsky25b
         with:
           pdk: sky130
-          tools-ref: refs/pull/123/merge
 
   viewer:
     needs: gds
@@ -54,4 +51,3 @@ jobs:
       - uses: TinyTapeout/tt-gds-action/viewer@ttsky25b
         with:
           pdk: sky130
-          tools-ref: refs/pull/123/merge
